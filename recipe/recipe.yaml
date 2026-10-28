@@ -11,7 +11,7 @@ source:
   sha256: cb070226c6bf6b79a14daed2e391b4385672b0d05807d48647faf273fbaf5b9e
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: "python -m pip install . --no-deps -vv"
   python:
@@ -44,6 +44,8 @@ requirements:
     - cartopy =0.25
     - matplotlib-base =3.10.9
     - simple-track
+    - brotli-python >=1.2.1
+    - libbrotlidec >=1.2.1
 tests:
   - python:
       python_version:
